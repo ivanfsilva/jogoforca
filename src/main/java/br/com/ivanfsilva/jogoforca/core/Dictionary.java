@@ -1,4 +1,4 @@
-package br.com.ivanfsilva.jogoforca.br.com.ivanfsilva.jogoforca.core;
+package br.com.ivanfsilva.jogoforca.core;
 
 import br.com.ivanfsilva.jogoforca.game.GameException;
 import br.com.ivanfsilva.jogoforca.utils.RandomUtils;
