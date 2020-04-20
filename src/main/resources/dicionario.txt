@@ -1,0 +1,7 @@
+classe
+objeto
+hranca
+polimorfismo
+encapsulamento
+sobrecarga
+sobrescrita
