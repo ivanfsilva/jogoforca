@@ -18,4 +18,8 @@ public class Config {
     public static String get(String name) {
         return props.getProperty(name);
     }
+
+    public static void setMaxErrors(String maxErrors) {
+        props.setProperty("maxErrors", maxErrors);
+    }
 }
