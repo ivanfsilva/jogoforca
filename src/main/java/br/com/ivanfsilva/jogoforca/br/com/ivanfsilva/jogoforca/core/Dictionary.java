@@ -5,14 +5,26 @@ import br.com.ivanfsilva.jogoforca.utils.RandomUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Dictionary {
 
     private static final String FILE_NAME = "dicionario.txt";
 
+    private static Dictionary instance;
+
     private List<String> words = new ArrayList<>();
+
+    public Dictionary() {
+        load();
+    }
+
+    public static Dictionary getInstance() {
+        if(instance == null) {
+            instance = new Dictionary();
+        }
+        return instance;
+    }
 
     private void load() {
         try (Scanner scanner =
